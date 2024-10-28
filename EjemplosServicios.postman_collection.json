@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "eb205ccb-3a56-4457-8fc9-e117f7edb367",
+		"name": "EjemplosServicios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35091584"
+	},
+	"item": [
+		{
+			"name": "ObtenerCliente",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7146/api/Cliente/1.obtener-info-cliente",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7146",
+					"path": [
+						"api",
+						"Cliente",
+						"1.obtener-info-cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "OrdenarDirecciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7146/api/Cliente/2.ordenar-direcciones?ordenarPor=creationDate&ascendente=true",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7146",
+					"path": [
+						"api",
+						"Cliente",
+						"2.ordenar-direcciones"
+					],
+					"query": [
+						{
+							"key": "ordenarPor",
+							"value": "creationDate"
+						},
+						{
+							"key": "ascendente",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DireccionPreferida",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7146/api/Cliente/3.direccion-preferida",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7146",
+					"path": [
+						"api",
+						"Cliente",
+						"3.direccion-preferida"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BuscarDireccion",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7146/api/Cliente/4.buscar-direcciones-CP?postalCode=66220",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7146",
+					"path": [
+						"api",
+						"Cliente",
+						"4.buscar-direcciones-CP"
+					],
+					"query": [
+						{
+							"key": "postalCode",
+							"value": "66220"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
